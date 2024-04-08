@@ -251,19 +251,38 @@ table.table.table-bordered > tbody > tr > td {
 
 @media all and (max-width: 425px) {
     #container {
-        height: 180vh;
+        height: 185vh;
         position: relative;
         padding-bottom: 47px; /* Height of the footer */
+    }
+
+    #middle-card {
+        top: 0;
+        left: 0;
+        bottom: 100px;
+        right: 0;
+        margin: auto;
     }
 
     #main-section {
         top: 105vh;
         width: 94vw;
+        height: 74vh;
     }
 
     #sub-section {
         height: 105vh;
         width: 90vw;
         left: 5vw;
+    }
+
+    #cards-2 {
+        position: relative;
+        margin-top: 280px;
+    }
+
+    #Tbl {
+        /* position: relative; */
+        top: 35px;
     }
 }
