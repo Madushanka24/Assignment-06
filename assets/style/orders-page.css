@@ -1175,7 +1175,7 @@ table.table.table-bordered > tbody > tr > td {
 
     #content-card-right {
         height: 56vh;
-        top: 70vh;
+        top: 66vh;
         left: 8px;
         width: 90vw;
     }
@@ -1231,19 +1231,19 @@ table.table.table-bordered > tbody > tr > td {
     #main-section>#btnUpdate {
         width: 88px;
         top: 1260px;
-        left: 3vw;
+        left: 9vw;
     }
 
     #main-section>#btnDelete {
         width: 90px;
         top: 1260px;
-        left: 27.2vw;
+        left: 35.2vw;
     }
 
     #main-section>#btnClearAll {
         width: 97px;
         top: 1260px;
-        left: 52vw;
+        left: 62vw;
     }
 
     #main-section>#lblTotalPrice {
@@ -1257,7 +1257,7 @@ table.table.table-bordered > tbody > tr > td {
         height: 72px;
         position: absolute;
         left: 27px;
-        top: 980px;
+        top: 1000px;
         bottom: 0;
         right: 0;
         margin: auto;
