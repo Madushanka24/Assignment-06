@@ -635,6 +635,12 @@ table.table.table-bordered > tbody > tr > td {
 
 @media all and (max-width: 425px) {
 
+    #totalItems {
+        top: 20px;
+        left: 23vw;
+        width: 52vw;
+    }
+
     #totalItems > label {
         font-size: 16px;
         top: 10px;
