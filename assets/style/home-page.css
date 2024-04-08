@@ -267,27 +267,3 @@ table.table.table-bordered > tbody > tr > td {
         left: 5vw;
     }
 }
-
-@media all and (max-width: 375px) {
-    #container {
-        height: 255vh;
-        position: relative;
-        padding-bottom: 47px;
-    }
-    #sub-section {
-        height: 150vh;
-        width: 90vw;
-        left: 5vw;
-    }
-
-    #main-section {
-        top: 155vh;
-        width: 94vw;
-        height: 97vh;
-    }
-
-    #Tbl {
-        position: relative;
-        top: 5px;
-    }
-}
