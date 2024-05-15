@@ -14,7 +14,7 @@ body {
 }
 
 .current-page-button {
-    background-color: #174951;
+    background-color: darkslategrey;
     color: #FFEEE2;
     padding: 18px 28px;
     border-radius: 30px;
@@ -26,7 +26,7 @@ body {
 .Orders,
 .Customers {
     display: inline-block;
-    color: #174951;
+    color: darkslategrey;
     padding: 18px 28px;
     border-radius: 30px;
     text-decoration: none;
@@ -37,7 +37,7 @@ body {
 .Home:hover,
 .Orders:hover,
 .Customers:hover {
-    background-color: #174951;
+    background-color: darkslategrey;
     color: #FEE5D4;
 }
 
@@ -45,7 +45,7 @@ footer {
     height: 110px;
     width: 100%;
     color: #FEE5D4;
-    background-color: #174951;
+    background-color: darkslategrey;
     text-align: center;
 
 }
@@ -53,134 +53,134 @@ footer>p {
     margin-bottom: 8px;
 }
 
-#main-section {
+#items-main-section{
     width: 98vw;
-    height: 70vh;
+    height: 675px;
     background-color: #FFF4ED;
     margin: auto;
     border-radius: 30px;
     padding: 20px; /* Add padding to prevent content from sticking to edges */
 }
 
-#container {
+#items-container {
     position: relative;
     padding-bottom: 47px; /* Height of the footer */
 }
 
-#content-card-left {
+#items-content-card-left {
     width: 815px;
     height: 300px;
-    border: 3px solid #174951;
+    border: 3px solid darkslategrey;
     border-radius: 30px;
     position: absolute;
     left: 40px;
     top: 20px;
 }
 
-#Tbl {
+#Tbl-items {
     position: relative;
     top: 400px;
 }
 table.table-bordered > thead > tr > th{
-    border:2px solid #174951;
+    border:2px solid darkslategrey;
     background-color: #FEE5D4;
-    color: #174951;
+    color: darkslategrey;
     text-align: center;
     font-weight: 950;
 }
 table.table-bordered > tbody {
-    border:2px solid #174951;
+    border:2px solid darkslategrey;
     text-align: center;
 }
 
 table.table.table-bordered > tbody > tr > td {
-    color: #174951;
+    color: darkslategrey;
 }
 
-#content-card-left > input,
-#main-section > input {
+#items-content-card-left > input,
+#items-main-section> input {
     width: 140px;
     height: 45px;
-    background-color: #FEE5D4;
-    border: 2px solid #174951;
+    background-color: darkslategrey;
+    border: 2px solid darkslategrey;
     border-radius: 25px;
 }
 
-#content-card-left>label {
+#items-content-card-left>label {
     font-family: "Lexend", sans-serif;
     font-style: italic;
     font-size: 18px;
     font-weight: 550;
-    color: #174951;
+    color: darkslategrey;
     position: absolute;
     left: 30px;
     top: 10px;
 }
 
-#content-card-left>#lblItemID {
+#items-content-card-left>#lblItemID {
     position: absolute;
     left: 45px;
     top: 50px;
 }
 
-#content-card-left>#txtItemID {
+#items-content-card-left>#txtItemID {
     width: 170px;
     position: absolute;
     left: 30px;
     top: 80px;
 }
 
-#content-card-left>#lblName {
+#items-content-card-left>#lblItemName {
     position: absolute;
     left: 283px;
     top: 50px;
 }
 
-#content-card-left>#txtName {
+#items-content-card-left>#txtItemName {
     width: 255px;
     position: absolute;
     left: 263px;
     top: 80px;
 }
 
-#content-card-left>#lblPrice {
+#items-content-card-left>#lblPrice {
     position: absolute;
     left: 615px;
     top: 50px;
 }
 
-#content-card-left>#txtPrice {
+#items-content-card-left>#txtPrice {
     width: 145px;
     position: absolute;
     left: 595px;
     top: 80px;
 }
 
-#content-card-left>#lblQuantity {
+#items-content-card-left>#lblQuantity {
     position: absolute;
     left: 45px;
     top: 190px;
 }
 
-#content-card-left>#txtQuantity {
+#items-content-card-left>#txtQuantity {
     width: 215px;
     position: absolute;
     left: 30px;
     top: 220px;
 }
 
-#main-section>#lblSearchItems {
+#items-main-section>#lblSearchItems {
     font-family: "Lexend", sans-serif;
     font-style: italic;
     font-size: 17px;
     font-weight: 550;
-    color: #174951;
+    color: darkslategrey;
     position: absolute;
     left: 45px;
     top: 366px;
 }
 
-#main-section>#txtSearch-03 {
+#items-main-section>#txtSearch-items {
     width: 305px;
     height: 39px;
     position: absolute;
@@ -192,40 +192,40 @@ table.table.table-bordered > tbody > tr > td {
     top: 394px;
 }
 
-#main-section>button.btn.btn-outline-primary {
+#items-main-section>button.btn.btn-outline-primary {
     width: 112px;
     height: 40px;
     position: absolute;
     border-radius: 20px;
-    border: 3px solid #174951;
-    color: #174951;
+    border: 3px solid darkslategrey;
+    color: darkslategrey;
     font-weight: 550;
     font-family: "Lexend", sans-serif;
     left: 375px;
     top: 393px;
 }
 
-#main-section>#btnUpdate {
+#items-main-section>#btnUpdate-items {
     left: 70vw;
     top: 393px;
 }
 
-#main-section>#btnDelete {
+#items-main-section>#btnDelete-items {
     left: 80vw;
     top: 393px;
 }
 
-#main-section>#btnClearAll {
+#items-main-section>#btnClearAll-items {
     left: 90vw;
     top: 393px;
 }
 
-#content-card-left>button.btn.btn-primary {
+#items-content-card-left>button.btn.btn-primary {
     width: 212px;
     position: absolute;
     border-radius: 20px;
-    border-color: #174951;
-    background-color: #174951;
+    border-color: darkslategrey;
+    background-color: darkslategrey;
     color: #FEE5D4;
     font-weight: 550;
     font-family: "Lexend", sans-serif;
@@ -233,25 +233,25 @@ table.table.table-bordered > tbody > tr > td {
     top: 223px;
 }
 
-#content-card-left>button.btn.btn-primary:hover {
+#items-content-card-left>button.btn.btn-primary:hover {
     border: 3px solid rgba(255, 255, 255, 0.53);
 }
 
-#content-card-left > #txtItemID:focus,
-#content-card-left > #txtName:focus,
-#content-card-left > #txtPrice:focus,
-#content-card-left > #txtQuantity:focus,
-#main-section>#txtSearch-03:focus {
+#items-content-card-left > #txtItemID:focus,
+#items-content-card-left > #txtItemName:focus,
+#items-content-card-left > #txtPrice:focus,
+#items-content-card-left > #txtQuantity:focus,
+#items-main-section>#txtSearch-items:focus {
     background-color: #FEE5D4;
-    border: 3px solid #174951;
+    border: 3px solid darkslategrey;
     box-shadow: none;
 }
 
-#main-section>button.btn.btn-outline-primary:hover,
-#main-section>#btnUpdate:hover,
-#main-section>#btnDelete:hover,
-#main-section>#btnClearAll:hover {
-    background-color: #174951;
+#items-main-section>button.btn.btn-outline-primary:hover,
+#items-main-section>#btnUpdate-items:hover,
+#items-main-section>#btnDelete-items:hover,
+#items-main-section>#btnClearAll-items:hover {
+    background-color: darkslategrey;
     color: #FEE5D4;
     font-weight: 550;
     font-family: "Lexend", sans-serif;
@@ -261,22 +261,33 @@ table.table.table-bordered > tbody > tr > td {
     width: 250px;
     height: 160px;
     background-color: #FEE5D4;
-    border: 3px solid #174951;
+    border: 3px solid darkslategrey;
     border-radius: 30px;
     position: absolute;
-    top: 10vh;
+    top: 100px;
     left: 70vw;
 }
 
-#totalItems > label {
+#totalItems-label {
     font-family: "Lexend", sans-serif;
     font-style: italic;
     font-size: 18px;
     font-weight: 750;
-    color: #174951;
+    color: darkslategrey;
     position: absolute;
     top: 10px;
     left: 70px;
+}
+
+#count-items {
+    width: fit-content;
+    height: fit-content;
+    font-size: 22px;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 #totalItems > img {
@@ -286,15 +297,15 @@ table.table.table-bordered > tbody > tr > td {
 }
 
 @media all and (max-width: 1440px) {
-    #main-section>#btnUpdate {
+    #items-main-section>#btnUpdate-items {
         left: 67vw;
     }
 
-    #main-section>#btnDelete {
+    #items-main-section>#btnDelete-items {
         left: 77vw;
     }
 
-    #main-section>#btnClearAll {
+    #items-main-section>#btnClearAll-items {
         left: 87vw;
     }
 }
@@ -305,15 +316,15 @@ table.table.table-bordered > tbody > tr > td {
         left: 73vw;
     }
 
-    #main-section>#btnUpdate {
+    #items-main-section>#btnUpdate-items {
         left: 67vw;
     }
 
-    #main-section>#btnDelete {
+    #items-main-section>#btnDelete-items {
         left: 77vw;
     }
 
-    #main-section>#btnClearAll {
+    #items-main-section>#btnClearAll-items {
         left: 87vw;
     }
 }
@@ -337,66 +348,66 @@ table.table.table-bordered > tbody > tr > td {
         left: 72px;
     }
 
-    #content-card-left {
+    #items-content-card-left {
         width: 675px;
         left: 40px;
         top: 20px;
     }
 
-    #content-card-left>#lblItemID {
+    #items-content-card-left>#lblItemID {
         position: absolute;
         left: 30px;
         top: 50px;
     }
 
-    #content-card-left>#txtItemID {
+    #items-content-card-left>#txtItemID {
         width: 158px;
         left: 18px;
         top: 80px;
     }
 
-    #content-card-left>#lblName {
+    #items-content-card-left>#lblItemName {
         position: absolute;
         left: 223px;
         top: 50px;
     }
 
-    #content-card-left>#txtName {
+    #items-content-card-left>#txtItemName {
         width: 211px;
         position: absolute;
         left: 205px;
         top: 80px;
     }
 
-    #content-card-left>#lblPrice {
+    #items-content-card-left>#lblPrice {
         position: absolute;
         left: 463px;
         top: 50px;
     }
 
-    #content-card-left>#txtPrice {
+    #items-content-card-left>#txtPrice {
         width: 205px;
         position: absolute;
         left: 447px;
         top: 80px;
     }
 
-    #main-section>button.btn.btn-outline-primary {
+    #items-main-section>button.btn.btn-outline-primary {
         width: 86px;
         height: 40px;
         left: 352px;
         top: 393px;
     }
 
-    #main-section>#btnUpdate {
+    #items-main-section>#btnUpdate-items {
         left: 60vw;
     }
 
-    #main-section>#btnDelete {
+    #items-main-section>#btnDelete-items {
         left: 72vw;
     }
 
-    #main-section>#btnClearAll {
+    #items-main-section>#btnClearAll-items {
         left: 84vw;
     }
 }
@@ -420,7 +431,7 @@ table.table.table-bordered > tbody > tr > td {
         left: 60px;
     }
 
-    #main-section>#btnClearAll {
+    #items-main-section>#btnClearAll-items {
         left: 83vw;
         width: 100px;
     }
@@ -428,113 +439,113 @@ table.table.table-bordered > tbody > tr > td {
 
 @media all and (max-width: 764px) {
 
-    #container {
+    #items-container {
         height: 100vh;
     }
 
-    #main-section {
+    #items-main-section{
         width: 96vw;
         height: 96vh;
     }
 
-    #Tbl {
+    #Tbl-items {
         top: 650px;
     }
 
-    #main-section>#lblSearchItems {
+    #items-main-section>#lblSearchItems {
         font-size: 16px;
         left: 45px;
         top: 613px;
     }
 
-    #main-section>#txtSearch-03 {
+    #items-main-section>#txtSearch-items {
         width: 200px;
         background-position: 157px;
         left: 31px;
         top: 642px;
     }
 
-    #main-section>button.btn.btn-outline-primary {
+    #items-main-section>button.btn.btn-outline-primary {
         width: 82px;
         height: 40px;
         left: 251px;
         top: 643px;
     }
 
-    #main-section>#btnUpdate {
+    #items-main-section>#btnUpdate-items {
         width: 90px;
         top: 642px;
         left: 55vw;
     }
 
-    #main-section>#btnDelete {
+    #items-main-section>#btnDelete-items {
         width: 90px;
         top: 642px;
         left: 68.2vw;
     }
 
-    #main-section>#btnClearAll {
+    #items-main-section>#btnClearAll-items {
         width: 97px;
         top: 642px;
         left: 81vw;
     }
 
-    #content-card-left {
+    #items-content-card-left {
         width: 445px;
         left: 40px;
         top: 50px;
         height: 470px;
     }
 
-    #content-card-left>#txtQuantity {
+    #items-content-card-left>#txtQuantity {
         width: 384px;
         position: absolute;
         left: 30px;
         top: 310px;
     }
 
-    #content-card-left>button.btn.btn-primary {
+    #items-content-card-left>button.btn.btn-primary {
         width: 212px;
         left: 14vw;
         top: 383px;
     }
 
-    #content-card-left>#lblQuantity {
+    #items-content-card-left>#lblQuantity {
         position: absolute;
         left: 45px;
         top: 280px;
     }
 
-    #content-card-left>#txtPrice {
+    #items-content-card-left>#txtPrice {
         width: 384px;
         position: absolute;
         left: 30px;
         top: 200px;
     }
 
-    #content-card-left>#lblPrice {
+    #items-content-card-left>#lblPrice {
         position: absolute;
         left: 47px;
         top: 170px;
     }
 
-    #content-card-left>#txtItemID {
+    #items-content-card-left>#txtItemID {
         width: 158px;
         left: 30px;
         top: 80px;
     }
 
-    #content-card-left>#lblItemID {
+    #items-content-card-left>#lblItemID {
         left: 44px;
         top: 50px;
     }
 
-    #content-card-left>#lblName {
+    #items-content-card-left>#lblItemName {
         left: 243px;
         top: 50px;
     }
 
-    #content-card-left>#txtName {
+    #items-content-card-left>#txtItemName {
         left: 222px;
         width: 190px;
     }
@@ -557,58 +568,58 @@ table.table.table-bordered > tbody > tr > td {
 }
 
 @media all and (max-width: 580px) {
-    #container {
+    #items-container {
         height: 120vh;
     }
 
-    #main-section {
+    #items-main-section{
         width: 96vw;
         height: 116vh;
     }
 
-    #Tbl {
+    #Tbl-items {
         top: 840px;
     }
 
-    #main-section>#lblSearchItems {
+    #items-main-section>#lblSearchItems {
         font-size: 15px;
         left: 36px;
         top: 805px;
     }
 
-    #main-section>#txtSearch-03 {
+    #items-main-section>#txtSearch-items {
         width: 200px;
         background-position: 157px;
         left: 23px;
         top: 832px;
     }
 
-    #main-section>button.btn.btn-outline-primary {
+    #items-main-section>button.btn.btn-outline-primary {
         width: 82px;
         height: 40px;
         left: 251px;
         top: 831px;
     }
 
-    #main-section>#btnUpdate {
+    #items-main-section>#btnUpdate-items {
         width: 90px;
         top: 692px;
         left: 15vw;
     }
 
-    #main-section>#btnDelete {
+    #items-main-section>#btnDelete-items {
         width: 90px;
         top: 692px;
         left: 38.2vw;
     }
 
-    #main-section>#btnClearAll {
+    #items-main-section>#btnClearAll-items {
         width: 97px;
         top: 692px;
         left: 61vw;
     }
 
-    #content-card-left {
+    #items-content-card-left {
         width: 445px;
         left: 40px;
         top: 210px;
@@ -652,114 +663,114 @@ table.table.table-bordered > tbody > tr > td {
         left: 81px;
     }
 
-    #content-card-left {
+    #items-content-card-left {
         width: 355px;
         left: 29px;
         top: 210px;
         height: 520px;
     }
 
-    #container {
+    #items-container {
         height: 130vh;
     }
 
-    #main-section {
+    #items-main-section{
         width: 96vw;
         height: 126vh;
     }
 
-    #Tbl {
+    #Tbl-items {
         top: 920px;
     }
 
-    #main-section>#txtSearch-03 {
+    #items-main-section>#txtSearch-items {
         width: 200px;
         background-position: 157px;
         left: 23px;
         top: 912px;
     }
 
-    #main-section>#lblSearchItems {
+    #items-main-section>#lblSearchItems {
         font-size: 15px;
         left: 36px;
         top: 885px;
     }
 
-    #main-section>button.btn.btn-outline-primary {
+    #items-main-section>button.btn.btn-outline-primary {
         width: 82px;
         height: 40px;
         left: 251px;
         top: 909px;
     }
 
-    #main-section>#btnUpdate {
+    #items-main-section>#btnUpdate-items {
         width: 90px;
         top: 782px;
         left: 15vw;
     }
 
-    #main-section>#btnDelete {
+    #items-main-section>#btnDelete-items {
         width: 90px;
         top: 782px;
         left: 38.2vw;
     }
 
-    #main-section>#btnClearAll {
+    #items-main-section>#btnClearAll-items {
         width: 97px;
         top: 782px;
         left: 61vw;
     }
 
-    #content-card-left>button.btn.btn-primary {
+    #items-content-card-left>button.btn.btn-primary {
         width: 212px;
         left: 16vw;
         top: 443px;
     }
 
-    #content-card-left>#txtQuantity {
+    #items-content-card-left>#txtQuantity {
         width: 294px;
         position: absolute;
         left: 30px;
         top: 370px;
     }
 
-    #content-card-left>#lblQuantity {
+    #items-content-card-left>#lblQuantity {
         position: absolute;
         left: 45px;
         top: 340px;
     }
 
-    #content-card-left>#txtPrice {
+    #items-content-card-left>#txtPrice {
         width: 294px;
         position: absolute;
         left: 30px;
         top: 270px;
     }
 
-    #content-card-left>#lblPrice {
+    #items-content-card-left>#lblPrice {
         position: absolute;
         left: 47px;
         top: 240px;
     }
 
-    #content-card-left>#txtName {
+    #items-content-card-left>#txtItemName {
         left: 31px;
         width: 294px;
         top: 170px;
     }
 
-    #content-card-left>#lblName {
+    #items-content-card-left>#lblItemName {
         left: 53px;
         top: 140px;
     }
 
-    #content-card-left>#txtItemID {
+    #items-content-card-left>#txtItemID {
         width: 178px;
         left: 81px;
         top: 70px;
     }
 
-    #content-card-left>#lblItemID {
+    #items-content-card-left>#lblItemID {
         left: 104px;
         top: 40px;
     }

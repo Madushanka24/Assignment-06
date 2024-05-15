@@ -17,7 +17,7 @@ body {
 .Customers,
 .Items {
     display: inline-block;
-    color: #B05200;
+    color: darkslategrey;
     padding: 18px 28px;
     border-radius: 30px;
     text-decoration: none;
@@ -28,7 +28,7 @@ body {
 .Orders:hover,
 .Customers:hover,
 .Items:hover {
-    background-color: #B05200;
+    background-color: darkslategrey;
     color: #FEE5D4;
 }
 
@@ -36,7 +36,7 @@ footer {
     height: 110px;
     width: 100%;
     color: #FEE5D4;
-    background-color: #B05200;
+    background-color: darkslategrey;
     text-align: center;
 }
 footer>p {
@@ -76,7 +76,7 @@ footer>p {
 #card1,#card2,#card3,#card4 {
     height: 140px;
     position: relative;
-    border: 3px solid #B05200;
+    border: 3px solid darkslategrey;
     background-color: #FEE5D4;
     border-radius: 20px;
     text-align: center;
@@ -98,7 +98,7 @@ footer>p {
 #home-middle-card {
     width: 300px;
     height: 180px;
-    border: 3px solid #B05200;
+    border: 3px solid darkslategrey;
     background-color: #FEE5D4;
     border-radius: 20px;
     position: absolute;
@@ -117,7 +117,7 @@ footer>p {
 
 label {
     font-family: "Lexend", sans-serif;
-    color: #B05200;
+    color: darkslategrey;
     font-weight: 900;
 }
 
@@ -181,18 +181,18 @@ label {
     font-size: 22px;
 }
 table.table-bordered > thead > tr > th{
-    border:2px solid #B05200;
+    border:2px solid darkslategrey;
     background-color: #FEE5D4;
-    color: #B05200;
+    color: darkslategrey;
     text-align: center;
     font-weight: 950;
 }
 table.table-bordered > tbody {
-    border:2px solid #B05200;
+    border:2px solid darkslategrey;
     text-align: center;
 }
 table.table.table-bordered > tbody > tr > td {
-    color: #B05200;
+    color: darkslategrey;
 }
 #Tbl {
     position: relative;
