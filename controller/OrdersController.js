@@ -1,4 +1,4 @@
-import OrderModel from '../model/OrderModel.js';
+import OrderModel from "modle/orderModle";
 import {orders} from "../db/db.js";
 import {customers} from "../db/db.js";
 import {items} from "../db/db.js";

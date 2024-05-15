@@ -1,4 +1,4 @@
-import ItemModel from "../model/ItemModel.js";
+import ItemModel from "modle/itemModle";
 import {items} from "../db/db.js";
 var recordIndexItems;
 
