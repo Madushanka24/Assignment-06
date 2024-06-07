@@ -21,7 +21,7 @@ $(document).ready(() => {
 
 function totalOrdersHome() {
     var total = orders.length;
-    $('#totalOrdersHome').text(total);
+    $('#totalOrdersHomePage').text(total);
 }
 
 function totalCustomersHome() {

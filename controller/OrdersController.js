@@ -1,14 +1,14 @@
-import OrderModel from '../model/OrderModel.js';
+import OrderModel from '../modle/orderModle.js';
 import {orders} from "../db/db.js";
 import {customers} from "../db/db.js";
 import {items} from "../db/db.js";
-import {loadOrderTableHome} from "./IndexController.js";
-import {loadItemTable} from "./ItemsController.js";
+/*import {loadOrderTableHome} from "./IndexController.js";
+import {loadItemTable} from "./ItemsController.js";*/
 var recordIndexOrders;
 var priceTagInterval;
 
 $('#nav-orders-section').on('click', () => {
-
+    console.log("orders section");
     const home = $('.current-page-button');
     const orders = $('.Orders');
     const customers = $('.Customers');

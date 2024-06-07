@@ -1,4 +1,4 @@
-import CustomerModel from "../modle/CustomerModle";
+import CustomerModel from "../modle/CustomerModle.js";
 import {customers} from "../db/db.js";
 var recordIndexCustomers;
 
