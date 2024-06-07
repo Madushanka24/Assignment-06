@@ -6,7 +6,7 @@ $('#orders-section,#customers-section,#items-section').hide();
 /*home button css when the index file is loaded this will add initially*/
 $(document).ready(() => {
     $('.current-page-button').css({
-        background: '#B05200',
+        background: 'darkslategrey',
         color: '#FFEEE2',
         padding: '18px 28px',
         border: '30px',
@@ -59,7 +59,7 @@ $('#nav-home-section').on('click',() => {
     function styleButton(button) {
         button.css({
             background: 'none',
-            color: '#B05200',
+            color: 'darkslategrey',
             padding: '18px 28px',
             border: '30px',
             text: 'none',
@@ -77,13 +77,13 @@ $('#nav-home-section').on('click',() => {
     function applyHoverEffect(button) {
         button.hover(function () {
             $(this).css({
-                background: '#B05200',
+                background: 'darkslategrey',
                 color: '#FEE5D4'
             });
         }, function () {
             $(this).css({
                 background: 'none',
-                color: '#B05200',
+                color: 'darkslategrey',
                 padding: '18px 28px',
                 border: '30px',
                 text: 'none',
@@ -101,7 +101,7 @@ $('#nav-home-section').on('click',() => {
     the css style in the home page btn.This is because all the css is applied to one file (SPA)*/
     $(home).hover(function (){
         $(this).css({
-            background: '#B05200',
+            background: 'darkslategrey',
             color: '#FEE5D4'
         });
     });
