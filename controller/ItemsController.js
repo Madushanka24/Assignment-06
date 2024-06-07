@@ -1,5 +1,6 @@
-import ItemModel from "modle/itemModle";
+import ItemModel from "../model/ItemModel.js";
 import {items} from "../db/db.js";
+export {loadItemTable}
 var recordIndexItems;
 
 $('#nav-items-section').on('click',() => {
@@ -20,7 +21,7 @@ $('#nav-items-section').on('click',() => {
     function styleButton(button) {
         button.css({
             background: 'none',
-            color: 'darkslategrey',
+            color: '#B05200',
             padding: '18px 28px',
             border: '30px',
             text: 'none',
@@ -38,13 +39,13 @@ $('#nav-items-section').on('click',() => {
     function applyHoverEffect(button) {
         button.hover(function () {
             $(this).css({
-                background: 'darkslategrey',
+                background: '#B05200',
                 color: '#FEE5D4'
             });
         }, function () {
             $(this).css({
                 background: 'none',
-                color: 'darkslategrey',
+                color: '#B05200',
                 padding: '18px 28px',
                 border: '30px',
                 text: 'none',
@@ -62,12 +63,42 @@ $('#nav-items-section').on('click',() => {
     the css style in the orders page btn.This is because all the css is applied to one file (SPA)*/
     $(items).hover(function (){
         $(this).css({
-            background: 'darkslategrey',
+            background: '#B05200',
             color: '#FEE5D4'
         });
     });
 });
 
+var ValidItemID = $('#items-content-card-left>#txtItemID');
+var ValidItemName = $('#items-content-card-left>#txtItemName');
+var ValidPrice = $('#items-content-card-left>#txtPrice');
+var ValidQty = $('#items-content-card-left>#txtQuantity');
+var isValidItemName = new RegExp("\\b[A-Z][a-z]*( [A-Z][a-z]*)*\\b");
+var isValidPriceAndQty = new RegExp("^[0-9]+\\.?[0-9]*$");
+
+$(ValidItemID).on("input", function () {
+    $(ValidItemID).css({
+        border: "2px solid #B05200"
+    });
+});
+
+$(ValidItemName).on("input", function () {
+    $(ValidItemName).css({
+        border: "2px solid #B05200"
+    });
+});
+
+$(ValidPrice).on("input", function () {
+    $(ValidPrice).css({
+        border: "2px solid #B05200"
+    });
+});
+
+$(ValidQty).on("input", function () {
+    $(ValidQty).css({
+        border: "2px solid #B05200"
+    });
+});
 
 /**Add, Update, Delete, Clear All**/
 
@@ -76,6 +107,66 @@ function clearAll() {
     $('#txtItemName').val("");
     $('#txtPrice').val("");
     $('#txtQuantity').val("");
+}
+
+function emptyPlaceHolder() {
+    $(ValidItemID).attr("placeholder", "");
+    $(ValidItemName).attr("placeholder", "");
+    $(ValidPrice).attr("placeholder", "");
+    $(ValidQty).attr("placeholder", "");
+}
+
+function defaultBorderColor() {
+    $(ValidItemID).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidItemName).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidPrice).css({
+        border: "2px solid #B05200"
+    });
+    $(ValidQty).css({
+        border: "2px solid #B05200"
+    });
+}
+
+function validItem() {
+    var itemID = $('#txtItemID').val();
+    var itemName = $('#txtItemName').val();
+    var itemPrice = $('#txtPrice').val();
+    var itemQty = $('#txtQuantity').val();
+
+
+    if (itemID === "" || !isValidItemName.test(itemName) || !isValidPriceAndQty.test(itemPrice) || !isValidPriceAndQty.test(itemQty)) {
+
+        $(ValidItemID).css({
+            border: "3px solid red"
+        });
+        $(ValidItemName).css({
+            border: "3px solid red"
+        });
+        $(ValidPrice).css({
+            border: "3px solid red"
+        });
+        $(ValidQty).css({
+            border: "3px solid red"
+        });
+
+        $(ValidItemID).attr("placeholder", "ID Empty");
+        $(ValidItemName).attr("placeholder", "Wrong Input Try Again");
+        $(ValidPrice).attr("placeholder", "Wrong Input");
+        $(ValidQty).attr("placeholder", "Wrong Input Try Again");
+
+        $(ValidItemID).addClass('red');
+        $(ValidItemName).addClass('red');
+        $(ValidPrice).addClass('red');
+        $(ValidQty).addClass('red');
+        return true;
+    } else {
+        defaultBorderColor();
+        emptyPlaceHolder();
+    }
 }
 
 function totalItems() {
@@ -88,7 +179,7 @@ $('#btnClearAll-items').on('click',() => {
 });
 
 function loadItemTable() {
-    $('#items-table-tb').empty();
+    $("#items-table-tb").empty();
 
     items.map((item,index) => {
         var itemRecord = `<tr>
@@ -121,16 +212,35 @@ $('#addItems').on('click',() => {
     var itemPrice = $('#txtPrice').val();
     var itemQty = $('#txtQuantity').val();
 
-    let itemModel = new ItemModel(itemID,itemName,itemPrice,itemQty);
+    if (itemID === "" || !isValidItemName.test(itemName) || !isValidPriceAndQty.test(itemPrice) || !isValidPriceAndQty.test(itemQty)) {
+        validItem();
+        return false;
+    }
 
+    let itemModel = new ItemModel(itemID,itemName,itemPrice,itemQty);
     items.push(itemModel);
+    emptyPlaceHolder();
+    defaultBorderColor();
     loadItemTable();
     clearAll();
     totalItems();
 });
 
 $('#btnDelete-items').on('click',() => {
+
+    var itemID = $('#txtItemID').val();
+    var itemName = $('#txtItemName').val();
+    var itemPrice = $('#txtPrice').val();
+    var itemQty = $('#txtQuantity').val();
+
+    if (itemID === "" || !isValidItemName.test(itemName) || !isValidPriceAndQty.test(itemPrice) || !isValidPriceAndQty.test(itemQty)) {
+        validItem();
+        return;
+    }
+
     items.splice(recordIndexItems,1);
+    emptyPlaceHolder();
+    defaultBorderColor();
     loadItemTable();
     clearAll();
     totalItems();
@@ -142,13 +252,38 @@ $('#btnUpdate-items').on('click',() => {
     var itemPrice = $('#txtPrice').val();
     var itemQty = $('#txtQuantity').val();
 
+    if (itemID === "" || !isValidItemName.test(itemName) || !isValidPriceAndQty.test(itemPrice) || !isValidPriceAndQty.test(itemQty)) {
+        validItem();
+        return;
+    }
+
     var iOb = items[recordIndexItems];
     iOb.id = itemID;
     iOb.name = itemName;
     iOb.price = itemPrice;
     iOb.qty = itemQty;
 
+    emptyPlaceHolder();
+    defaultBorderColor();
     loadItemTable();
     clearAll();
     totalItems();
+});
+
+function searchItems(query) {
+    const searchTerm = query.toLowerCase();
+
+    for (let i = 0; i < items.length; i++) {
+        if (searchTerm === items[i].id.toLowerCase() || searchTerm === items[i].name.toLowerCase()) {
+            $('#txtItemID').val(items[i].id);
+            $('#txtItemName').val(items[i].name);
+            $('#txtPrice').val(items[i].price);
+            $('#txtQuantity').val(items[i].qty);
+        }
+    }
+}
+
+$('#searchItems').on('click', function() {
+    const searchQuery = $('#txtSearch-items').val();
+    searchItems(searchQuery);
 });
